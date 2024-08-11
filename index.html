@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon"  href="cropped-image-(2).png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>ai générate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="lightBox" id="lightBox">
+        <div class="main-img">
+            <div class="header">
+                <div class="photographe-lightBox">
+                    <i class="fa-solid fa-camera"></i>
+                    <span id="name-photgraphe">amine</span>
+                </div>
+                <div class="buttons-lightBox">
+                    <div class="download" onclick="downloadLIght()" >
+                        <i  class="fa-solid fa-download"></i>
+                    </div>
+                    <div class="X-mark" id="x-mark">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+            </div>
+            <img id="image-lightbox" src="" alt="">
+        </div>
+        
+    </div>
+    <header>
+        <img src="6057485.jpg" alt="">
+        <div class="info">
+            <h1>Create images using JavaScript API</h1>
+            <h4>search and download images within a second</h4>
+            <div class="serche-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="serch-img" placeholder="serch images">
+            </div>
+        </div>
+    </header>
+    <main>
+        <ul id="images">
+            <!-- <li class="card">
+                <img src="search-img.jpg" alt="">
+                <div class="info-img">
+                    <div class="photographe">
+                        <i class="fa-solid fa-camera"></i>
+                        <span id="name-photgraphe">amine</span>
+                    </div>
+                    <div class="button-download">
+                        <i class="fa-solid fa-download"></i>
+                    </div>
+                </div>
+            </li> -->
+            <!--
+            <li class="card">
+                <img src="../image_serch/showImg/photographer.jpg" alt="">
+                
+
+
+                </div>
+            </li>
+            !-->
+        </ul>
+
+        <button id="moreBtn">load more</button>
+    </main>
+    <script src="main2.js"></script>
+</body>
+</html>

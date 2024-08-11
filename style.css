@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+
+}
+header img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header .info{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+
+}
+header .info h1{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+header .info h4{
+    font-size: 25px;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+header .info .serche-box input{
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 20px;
+    background-color: transparent;
+}
+header .info .serche-box{
+    padding-top: 10px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    padding-bottom: 8px;
+    font-size: 22px;
+    padding-left: 10px !important;
+    border-radius: 6px;
+
+    padding: 10px 0px;
+    gap: 5px;
+    background-color: white;
+    color: rgb(112, 112, 112);
+
+}
+main{
+    padding: 50px 0px;
+    margin-bottom: 40px ;
+}
+#images{
+    columns: 5 340px;
+    max-width: 95%;
+    margin: auto;
+    gap: 10px;
+    list-style: none;
+    
+}
+#images .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#images .card{
+    position: relative;
+    overflow: hidden;
+}
+#moreBtn{
+    text-decoration: none;
+    border: none;
+    padding: 15px 25px;
+    background-color: rgb(25, 151, 255);
+    border-radius: 6px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    cursor: pointer;
+    margin:30px  auto;
+    transition: 0.3s;
+
+}
+.info-img i{
+    cursor: pointer;
+    font-size: 22px;
+}
+.info-img{
+    position: absolute;
+    bottom: -100px;
+    display: flex;
+    padding: 15px 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    transition: bottom 0.3s;
+
+}
+#images .card:hover .info-img{
+    bottom: 0px;
+}
+#moreBtn:hover{
+    background-color: rgb(7, 82, 144);  ;
+}
+.show{
+    display: block !important;
+}
+
+
+.lightBox{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.721);
+    z-index: 1000;
+}
+.lightBox .main-img{
+    position: absolute;
+    width: 100%;
+    max-width: 850px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    flex-direction: column;
+}.lightBox .main-img .header{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.lightBox .main-img .header .buttons-lightBox{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.lightBox .main-img .header .buttons-lightBox div{
+    width: 45px;
+    height: 45px;
+    border-radius: 4px;
+    background-color: #66adff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(50, 50, 50);
+    transition: 0.3s;
+    cursor: pointer;
+}
+.photographe-lightBox{
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.lightBox .main-img .header .buttons-lightBox div:last-child{
+    background-color: #6c757d;
+    cursor: pointer;
+    color: white;
+}
+.lightBox .main-img .header .buttons-lightBox div:last-child:hover{
+    color: rgb(255, 72, 72);
+    background-color: #505153;
+}
+.lightBox .main-img .header .buttons-lightBox div:first-child:hover{
+    color: rgb(0, 0, 0);
+    background-color: #296fc0;
+}
+.lightBox .main-img img{
+    width: 100%;
+    max-width: 90vh;
+    max-height: 60vh;
+    object-fit: contain;
+}
+@media screen and (max-width: 700px) {
+    header {
+        height: 40vh;
+    }
+    
+    header .info h1 {
+        font-size: 30px !important;
+        padding-bottom: 10px;
+    }
+
+    header .info h4 {
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    header .info .search-box input {
+        font-size: 18px;
+    }
+
+    header .info .search-box {
+        width: 60%;
+        font-size: 20px;
+    }
+}
